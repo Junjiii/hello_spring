@@ -18,7 +18,7 @@ class MemberServiceIntegrationTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
-    public void 회원가입() throws Exception {
+    public void signIn() throws Exception {
         //Given
         Member member = new Member();
         member.setName("hello");
@@ -30,7 +30,7 @@ class MemberServiceIntegrationTest {
     }
 
     @Test
-    public void 중복_회원_예외() throws Exception {
+    public void duplicateException() throws Exception {
         //Given
         Member member1 = new Member();
         member1.setName("spring");
